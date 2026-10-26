@@ -1,0 +1,50 @@
+{
+  "base_url": {
+    "type": "string",
+    "description": "VCPedia MediaWiki API 地址",
+    "hint": "默认使用 VCPedia 官方 API，通常无需修改",
+    "default": "https://vcpedia.cn/api.php"
+  },
+  "timeout_seconds": {
+    "type": "float",
+    "description": "HTTP 请求超时秒数",
+    "hint": "网络较慢可适当调大",
+    "default": 12.0
+  },
+  "cache_ttl_seconds": {
+    "type": "int",
+    "description": "页面缓存有效期（秒）",
+    "hint": "默认 24 小时；VCPedia 页面更新后可等待缓存过期",
+    "default": 86400
+  },
+  "max_return_chars": {
+    "type": "int",
+    "description": "常规工具返回的最大字符数",
+    "hint": "避免返回过长内容导致模型上下文拥挤",
+    "default": 3800
+  },
+  "max_full_page_chars": {
+    "type": "int",
+    "description": "full_page 模式返回的最大字符数",
+    "hint": "整页内容较长，建议保持在 12000-20000 之间",
+    "default": 16000
+  },
+  "max_lyrics_chars": {
+    "type": "int",
+    "description": "歌词模式返回的最大字符数",
+    "hint": "歌词通常 1000-4000 字，6000 已足够",
+    "default": 6000
+  },
+  "default_search_limit": {
+    "type": "int",
+    "description": "默认搜索候选数量",
+    "hint": "候选越多越容易命中，但请求也会稍慢",
+    "default": 5
+  },
+  "user_agent": {
+    "type": "string",
+    "description": "请求 VCPedia 时使用的 User-Agent",
+    "hint": "一般无需修改；如需遵守站点要求可填写带联系方式的 UA",
+    "default": "astrbot-plugin-vcpedia/1.0"
+  }
+}

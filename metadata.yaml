@@ -1,0 +1,18 @@
+name: astrbot_plugin_vcpedia
+display_name: VCPedia 查询
+short_desc: 查询 VCPedia 虚拟歌手百科的歌曲、P主、声库、专辑与歌词
+desc: |
+  让 LLM 查询 VCPedia（虚拟歌手百科）的页面、歌曲、P主、声库、专辑与歌词。
+  统一入口 ask_vcpedia 会自动解析信息框、STAFF、专辑曲目、多版本歌曲与歌词，
+  适合 VOCALOID、Synthesizer V、ACE Studio 和中文原创曲相关问答。
+version: 1.0.0
+author: ristSn
+repo: https://github.com/ristSn/astrbot_plugin_vcpedia
+social_link: https://github.com/ristSn
+category: ai_tools
+tags:
+  - VCPedia
+  - VOCALOID
+  - 虚拟歌手
+  - Wiki
+  - 歌词
